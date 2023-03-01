@@ -28,6 +28,7 @@ void MMult1(long m, long n, long k, double *a, double *b, double *c) {
   int num_blocks = m / BLOCK_SIZE;
   for (long i = 0; i < n; i+=BLOCK_SIZE) {
     for (long j = 0; j < m; j+=BLOCK_SIZE) {
+      # pragma omp parallel for
       for (long y = 0; y < m; y++) {
         for (long x = i; x < i + BLOCK_SIZE; x++) {
           for (long p = j; p < j+BLOCK_SIZE; p++) {
