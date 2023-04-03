@@ -1,5 +1,3 @@
-All tests were run on a Linux Machine with a 6 core Intel(R) Core(TM) i7-8700 CPU @ 3.20 GHz processor
-
 Question 1. OpenMP warm-up
 
 For simplicity, I am assuming that n is even
@@ -33,3 +31,16 @@ Therefore, the total time spent to execute the parallel region is n^2/4 + n^2/4 
 (d) Yes, this would be the nowait clause. This would eliminate the waiting time between loops. Thus, the first thread would take a total of n^2/8 + n/4 + 3n^2/8 - n/4 = n^2/2 milliseconds, while the second thread would take 3n^2/8 - 3n/4 + n^2/8 - n/4 = n^2/2 - n milliseconds. Therefore, the overall program is limited by the first thread, so the whole program takes n^2/2 milliseconds to run.
 
 Question 2.
+This question was run on a AMD EPYC Processor with 4 cores @ 2.89 MhZ
+
+I ran this with N = 10000000
+Note that the serial time for this test is: 0.074000s
+num_thread, total time
+01,0.017261
+02,0.011664
+03,0.009990
+04,0.010304
+05,0.012885
+06,0.009994
+07,0.010945
+08,0.009181

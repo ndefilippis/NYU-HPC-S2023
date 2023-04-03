@@ -28,7 +28,7 @@ void scan_omp(long* prefix_sum, const long* A, long n) {
     t = omp_get_thread_num();
 
     partial_sum = 0;
-    #pragma omp for schedule(static)
+    #pragma omp for schedule(static) nowait
     for (i = 0; i < n; i++){
       prefix_sum[i] = partial_sum;
       partial_sum += A[i];
@@ -50,7 +50,7 @@ void scan_omp(long* prefix_sum, const long* A, long n) {
 }
 
 int main() {
-  long N = 100000000;
+  long N = 10000000;
   long* A = (long*) malloc(N * sizeof(long));
   long* B0 = (long*) malloc(N * sizeof(long));
   long* B1 = (long*) malloc(N * sizeof(long));
