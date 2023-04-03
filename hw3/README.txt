@@ -35,7 +35,7 @@ This question was run on a AMD EPYC Processor with 4 cores @ 2.89 MhZ
 
 I ran this with N = 10000000
 Note that the serial time for this test is: 0.074000s
-num_thread, total time
+number of threads, total time
 01,0.017261
 02,0.011664
 03,0.009990
@@ -44,3 +44,28 @@ num_thread, total time
 06,0.009994
 07,0.010945
 08,0.009181
+
+Question 3.
+This question was run on a Linux machine with a 6 core Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+
+All tests will use 5000 iterations
+
+We will start with N = 100
+number of threads, jacobi timing, gauss seidel timing
+1, 0.119, 0.117
+2, 0.091, 0.105
+4, 0.072, 0.107
+
+For N = 200
+no. threads, jacobi, gs
+1, 0.665, 0.567
+2, 0.404, 0.338
+4, 0.262, 0.203
+
+For N = 500
+no. threads, jacobi, gs
+1, 5.145, 4.612
+2, 3.474, 2.408
+4, 1.886, 1.318
+
+4. For the final project, I will be working with Ryan Du and Hassan Mason on parallelizing components of the Fast Fourier Transform using OpenMP

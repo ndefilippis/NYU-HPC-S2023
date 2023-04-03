@@ -87,7 +87,7 @@ void inverse_solve(long N, double* u, double* f, long max_k) {
 }
 
 int main(int argc, char** argv) {
-  long N = read_option<long>("-n", argc, argv);
+  long N = read_option<long>("-n", argc, argv, "100");
   long max_k = read_option<long>("-N", argc, argv, "5000");
 
   double* u = (double*) malloc(N*N * sizeof(double));
