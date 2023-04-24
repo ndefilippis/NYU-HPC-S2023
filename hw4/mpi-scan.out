@@ -1,0 +1,13 @@
+Rank 0/10 running on ga010.hpc.nyu.edu.
+Rank 3/10 running on ga013.hpc.nyu.edu.
+Rank 1/10 running on ga011.hpc.nyu.edu.
+Rank 8/10 running on ga018.hpc.nyu.edu.
+Rank 7/10 running on ga017.hpc.nyu.edu.
+Rank 6/10 running on ga016.hpc.nyu.edu.
+Rank 5/10 running on ga015.hpc.nyu.edu.
+Rank 4/10 running on ga014.hpc.nyu.edu.
+Rank 9/10 running on ga019.hpc.nyu.edu.
+Rank 2/10 running on ga012.hpc.nyu.edu.
+sequential-scan = 0.014796s
+parallel-scan   = 0.168454s
+error = 0

@@ -1,0 +1,10 @@
+Rank 0/6 running on cs364.hpc.nyu.edu
+Rank 3/6 running on cs367.hpc.nyu.edu
+Rank 5/6 running on cs369.hpc.nyu.edu
+Rank 1/6 running on cs365.hpc.nyu.edu
+Rank 2/6 running on cs366.hpc.nyu.edu
+Rank 4/6 running on cs368.hpc.nyu.edu
+Message received, expected: 1500000, 1500000
+Time: 9.527667e-01 ms
+Latency: 1.587944e-01 ms
+Bandwith: 4.373229e-02 Gb/s

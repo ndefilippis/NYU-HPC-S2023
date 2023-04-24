@@ -38,12 +38,23 @@ void scan_mpi(long* prefix_sum, const long* A, long n, int rank, int size) {
 int main(int argc, char** argv) {
   int rank;
   int size;
+  int host_length;
+
+  char hostname[256];
 
   MPI_Init(&argc, &argv);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
-  
-  long N = 10000000;
+  MPI_Get_processor_name(hostname, &host_length);
+ 
+  printf("Rank %d/%d running on %s.\n", rank, size, hostname);
+  long N;
+  if(argc < 2) {
+    N = 10000000;
+  }
+  else {
+    N = atoi(argv[1]);
+  }
   long N_sub = N / size;
 
   long* A, *A_sub, *B0, *B1, *B1_sub;

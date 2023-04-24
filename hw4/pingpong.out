@@ -1,0 +1,4 @@
+Rank 1/2 running on cs489.hpc.nyu.edu.
+Rank 0/2 running on cs488.hpc.nyu.edu.
+pingpong latency: 9.950549e-04 ms
+pingpong bandwidth: 6.602681e+00 GB/s
