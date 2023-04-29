@@ -60,3 +60,5 @@ parallel-scan   = 0.009185s
 error = 0
 
 when running on 10 nodes
+
+4. For my final project, I will be working on a Shallow Water raytracing code with Ryan Du and Hassan Mason. We will be attempting to use a finite volume solver with adaptive mesh refinement. The interesting parallel application of this problem is the parallelization of the adaptive mesh, since it is not as simple to find a cell's neighbors, since they may be on a different scale.
